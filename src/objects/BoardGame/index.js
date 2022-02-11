@@ -5,9 +5,9 @@ function CardTable(cardsAmount) {
     const card = CardGame();
     const $htmlBoardGame = card.repeat(cardsAmount);
     return(`
-        <article class="card-table">
+        <section class="board-game">
             ${$htmlBoardGame}
-        </article>
+        </section>
     `)
 }
 
