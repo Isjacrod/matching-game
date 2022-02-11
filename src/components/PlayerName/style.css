@@ -1,5 +1,4 @@
 .player-name {
-    font-family: monospace;
-    font-size: 10px;
+    font-family: 'mono';
     color: var(--color-floral-white);
 }

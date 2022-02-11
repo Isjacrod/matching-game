@@ -1,5 +1,5 @@
 body {
     background-color: var(--color-pomb-and-power);
-    width: 320px;
+    width: fit-content;
     margin: auto;
 }
