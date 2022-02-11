@@ -1,0 +1,7 @@
+.card-table {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    column-gap: 24px;
+    row-gap: 20px;
+    padding: 20px;
+}
