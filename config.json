@@ -1,0 +1,24 @@
+{
+    "matchingGame": {
+        "images": {
+            "back": {
+                "image": "alura-pixel.png",
+                "alt": "Logo Alura"
+            },
+            "front": [
+                {
+                    "image": "css.png",
+                    "alt": "Logo CSS"
+                },
+                {
+                    "image": "html.png",
+                    "alt": "Logo HTML"
+                },
+                {
+                    "image": "javascript.png",
+                    "alt": "Logo Javascript"
+                }
+            ]
+        }
+    }
+}

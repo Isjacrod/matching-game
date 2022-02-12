@@ -1,9 +1,15 @@
 import CardFrontBack from '../../components/CardFrontBack';
 import './style.css'
 
-function CardTable(cardsAmount) {
-    const $htmlCardFrontBack = CardFrontBack();
-    const $htmlBoardGame = $htmlCardFrontBack.repeat(cardsAmount);
+function BoardGame(images, pairsAmount) {
+    let temporaryCards = [];
+    const back = images.back;
+
+    for (let i = 0; i < pairsAmount; i++) {
+        temporaryCards.push( CardFrontBack(back, images.front[i]) );
+    }
+    const $htmlBoardGame = temporaryCards.join('');
+
     return(`
         <section class="board-game">
             ${$htmlBoardGame}
@@ -11,4 +17,4 @@ function CardTable(cardsAmount) {
     `)
 }
 
-export default CardTable;
+export default BoardGame;
