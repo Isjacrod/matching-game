@@ -5,11 +5,9 @@ import BoardGame from './src/objects/BoardGame';
 import ScoreBoard from './src/objects/ScoreBoard';
 import ConfigJSON from './config.json';
 
-console.log(ConfigJSON);
-
 const $root = document.querySelector('#root');
 
 $root.insertAdjacentHTML('beforeend', `
-    ${ScoreBoard()}
+    ${ScoreBoard(3)}
     ${BoardGame(ConfigJSON.matchingGame.images, 3)}
 `);
