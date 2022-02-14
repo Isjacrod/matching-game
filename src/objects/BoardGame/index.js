@@ -6,7 +6,8 @@ function BoardGame(images, pairsAmount) {
     const back = images.back;
 
     for (let i = 0; i < pairsAmount; i++) {
-        temporaryCards.push( CardFrontBack(back, images.front[i]) );
+        const $singleCard = CardFrontBack(back, images.front[i]);
+        temporaryCards.push($singleCard, $singleCard);
     }
     const $htmlBoardGame = temporaryCards.join('');
 

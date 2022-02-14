@@ -1,9 +1,15 @@
 .card-front-back {
+    --card-game-width: 130px;
+    --card-game-height: 160px;
+}
+
+.card-front-back {
     position: relative;
     width: var(--card-game-width);
     height: var(--card-game-height);
     transform-style: preserve-3d;
     transition: transform 0.5s cubic-bezier(.6,-0.28,.74,.05);
+    cursor: pointer;
 }
 
 .card-front-back.-rotate {
